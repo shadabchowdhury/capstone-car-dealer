@@ -1,12 +1,13 @@
 from django.http import HttpResponse
 from django.urls import path
 
-def home(request):
-    return HttpResponse("Welcome to the Car Dealer App!")
+def health_check(request):
+    return HttpResponse("OK")
 
 urlpatterns = [
-    path('', home),
-    # your other paths...
+    path('healthz/', health_check),  # add this
+    path('', lambda request: HttpResponse("Welcome to Car Dealer!")),  # optional
 ]
+
 
 
