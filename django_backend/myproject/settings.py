@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-m%(ihdl-eoyk9bv)_v*k)68^8uol4wh(sre-14gj3=q=piv=9o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['capstone-car-dealer.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
