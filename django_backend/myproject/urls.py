@@ -1,13 +1,12 @@
-from django.contrib import admin
-from django.urls import path
 from django.http import HttpResponse
+from django.urls import path
 
-def health_check(request):
-    return HttpResponse("OK", status=200)
+def home(request):
+    return HttpResponse("Welcome to the Car Dealer App!")
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('healthz/', health_check),
+    path('', home),
+    # your other paths...
 ]
 
 
